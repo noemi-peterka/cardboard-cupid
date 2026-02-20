@@ -1,0 +1,142 @@
+[
+  {
+    "id": 13,
+    "name": "CATAN",
+    "year": 1995,
+    "rank": 612,
+    "usersRated": 140677,
+    "bayes": 6.90425,
+    "avg": 7.09126,
+    "genres": ["family", "strategy"]
+  },
+  {
+    "id": 822,
+    "name": "Carcassonne",
+    "year": 2000,
+    "rank": 240,
+    "usersRated": 138420,
+    "bayes": 7.29831,
+    "avg": 7.4158,
+    "genres": ["family"]
+  },
+  {
+    "id": 30549,
+    "name": "Pandemic",
+    "year": 2008,
+    "rank": 170,
+    "usersRated": 134145,
+    "bayes": 7.40605,
+    "avg": 7.51546,
+    "genres": ["family", "strategy"]
+  },
+  {
+    "id": 68448,
+    "name": "7 Wonders",
+    "year": 2010,
+    "rank": 114,
+    "usersRated": 111852,
+    "bayes": 7.55141,
+    "avg": 7.66436,
+    "genres": ["family", "strategy"]
+  },
+  {
+    "id": 167791,
+    "name": "Terraforming Mars",
+    "year": 2016,
+    "rank": 9,
+    "usersRated": 111651,
+    "bayes": 8.18909,
+    "avg": 8.33999,
+    "genres": ["strategy"]
+  },
+  {
+    "id": 266192,
+    "name": "Wingspan",
+    "year": 2019,
+    "rank": 38,
+    "usersRated": 110911,
+    "bayes": 7.8506,
+    "avg": 8.00376,
+    "genres": ["family", "strategy"]
+  },
+  {
+    "id": 173346,
+    "name": "7 Wonders Duel",
+    "year": 2015,
+    "rank": 24,
+    "usersRated": 107523,
+    "bayes": 7.95364,
+    "avg": 8.07903,
+    "genres": ["strategy"]
+  },
+  {
+    "id": 230802,
+    "name": "Azul",
+    "year": 2017,
+    "rank": 96,
+    "usersRated": 106508,
+    "bayes": 7.60887,
+    "avg": 7.71827,
+    "genres": ["abstract", "family"]
+  },
+  {
+    "id": 178900,
+    "name": "Codenames",
+    "year": 2015,
+    "rank": 161,
+    "usersRated": 102748,
+    "bayes": 7.4305,
+    "avg": 7.52668,
+    "genres": ["party"]
+  },
+  {
+    "id": 9209,
+    "name": "Ticket to Ride",
+    "year": 2004,
+    "rank": 256,
+    "usersRated": 97483,
+    "bayes": 7.26295,
+    "avg": 7.38635,
+    "genres": ["family"]
+  },
+  {
+    "id": 36218,
+    "name": "Dominion",
+    "year": 2008,
+    "rank": 145,
+    "usersRated": 96086,
+    "bayes": 7.47437,
+    "avg": 7.59749,
+    "genres": ["strategy"]
+  },
+  {
+    "id": 169786,
+    "name": "Scythe",
+    "year": 2016,
+    "rank": 26,
+    "usersRated": 92245,
+    "bayes": 7.94981,
+    "avg": 8.10447,
+    "genres": ["strategy"]
+  },
+  {
+    "id": 148228,
+    "name": "Splendor",
+    "year": 2014,
+    "rank": 241,
+    "usersRated": 89135,
+    "bayes": 7.29217,
+    "avg": 7.41956,
+    "genres": ["family"]
+  },
+  {
+    "id": 14996,
+    "name": "Ticket to Ride: Europe",
+    "year": 2005,
+    "rank": 175,
+    "usersRated": 84538,
+    "bayes": 7.39613,
+    "avg": 7.52434,
+    "genres": ["family"]
+  }
+]
