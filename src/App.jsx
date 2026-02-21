@@ -1,16 +1,18 @@
-import { useState } from "react";
+// src/App.jsx
 import "./App.css";
 import Header from "./components/Header";
-import SearchBar from "./components/SearchBar";
 import CollectionPage from "./pages/CollectionPage";
+import SwipePage from "./pages/SwipePage";
+import { useGame } from "./state/GameProvider";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const { state } = useGame();
 
   return (
     <>
       <Header />
-      <CollectionPage />
+      {state.mode === "collection" && <CollectionPage />}
+      {(state.mode === "swipe" || state.mode === "result") && <SwipePage />}
     </>
   );
 }
