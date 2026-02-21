@@ -57,6 +57,17 @@ export default function CollectionPage() {
           />
         ))}
       </div>
+      <p>{state.ownedIds.size} selected</p>
+      <button
+        type="button"
+        onClick={() => {
+          dispatch({ type: "CLEAR_OWNED" });
+          setQuery("");
+        }}
+        disabled={state.ownedIds.size === 0 && query === ""}
+      >
+        Clear all
+      </button>
 
       <button
         type="button"

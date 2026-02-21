@@ -1,4 +1,3 @@
-// src/App.jsx
 import "./App.css";
 import Header from "./components/Header";
 import CollectionPage from "./pages/CollectionPage";
@@ -12,7 +11,9 @@ function App() {
     <>
       <Header />
       {state.mode === "collection" && <CollectionPage />}
-      {(state.mode === "swipe" || state.mode === "result") && <SwipePage />}
+      {(state.mode === "feed" ||
+        state.mode === "tournament" ||
+        state.mode === "result") && <SwipePage />}
     </>
   );
 }
