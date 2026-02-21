@@ -40,3 +40,20 @@
 .read-the-docs {
   color: #888;
 }
+
+.game-tile {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.game-tile:hover {
+  transform: translateY(-2px);
+}
+
+.game-tile.selected {
+  background: #dff5e6;
+  border-color: #2ecc71;
+}

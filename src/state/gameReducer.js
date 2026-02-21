@@ -1,4 +1,3 @@
-// src/state/gameReducer.js
 import { shuffle } from "../utils/shuffle";
 
 export const initialState = {
@@ -6,15 +5,12 @@ export const initialState = {
   isLoading: true,
   error: null,
 
-  // selection
   ownedIds: new Set(),
 
-  // flow
-  mode: "collection", // "collection" | "swipe" | "result"
+  mode: "collection",
 
-  // swipe tournament
   swipe: {
-    candidates: [], // array of game objects, shuffled
+    candidates: [],
     currentIndex: 1,
     currentWinner: null,
   },

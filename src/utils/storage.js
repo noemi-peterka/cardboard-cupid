@@ -1,4 +1,3 @@
-// src/utils/storage.js
 const KEY = "cardboard_cupid_owned_ids";
 
 export function loadOwnedIds() {
