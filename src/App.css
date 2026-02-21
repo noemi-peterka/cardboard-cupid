@@ -57,3 +57,45 @@
   background: #dff5e6;
   border-color: #2ecc71;
 }
+
+/* put in App.css or index.css */
+
+.search-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto 16px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 40px 12px 12px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+.search-clear {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  background: transparent;
+  font-size: 22px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+/* optional: more columns on wider screens */
+@media (min-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}

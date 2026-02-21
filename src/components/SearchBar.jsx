@@ -1,4 +1,5 @@
-export default function SearchBar({ value, onChange, onClear }) {
+// src/components/SearchBar.jsx
+export default function SearchBar({ value = "", onChange, onClear }) {
   return (
     <div className="search-wrap">
       <input

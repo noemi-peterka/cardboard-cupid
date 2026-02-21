@@ -17,7 +17,7 @@ export function GameProvider({ children }) {
     const load = async () => {
       dispatch({ type: "LOAD_GAMES_START" });
       try {
-        const res = await fetch("/sampleData.json");
+        const res = await fetch("/games.json");
         if (!res.ok) throw new Error(`Failed to load data: ${res.status}`);
         const games = await res.json();
 

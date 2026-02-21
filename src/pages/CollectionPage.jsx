@@ -3,10 +3,11 @@ import { useGame } from "../state/GameProvider";
 import SearchBar from "../components/SearchBar";
 import GameTile from "../components/GameTile";
 
-function normalize(str) {
-  return str.toLowerCase().trim();
+function normalize(value) {
+  return String(value ?? "")
+    .toLowerCase()
+    .trim();
 }
-
 export default function CollectionPage() {
   const { state, dispatch } = useGame();
   const [query, setQuery] = useState("");
