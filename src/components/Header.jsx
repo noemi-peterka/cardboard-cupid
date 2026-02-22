@@ -11,7 +11,7 @@ export default function Header() {
 
   return (
     <header className="app-header">
-      <div className="app-header__left">
+      <div className="app-header__inner">
         <div className="app-logo" aria-hidden="true">
           <span className="pip" />
           <span className="pip" />

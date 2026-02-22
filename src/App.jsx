@@ -8,13 +8,15 @@ function App() {
   const { state } = useGame();
 
   return (
-    <>
+    <div className="app-shell">
       <Header />
-      {state.mode === "collection" && <CollectionPage />}
-      {(state.mode === "feed" ||
-        state.mode === "tournament" ||
-        state.mode === "result") && <SwipePage />}
-    </>
+      <main className="app-main">
+        {state.mode === "collection" && <CollectionPage />}
+        {(state.mode === "feed" ||
+          state.mode === "tournament" ||
+          state.mode === "result") && <SwipePage />}
+      </main>
+    </div>
   );
 }
 

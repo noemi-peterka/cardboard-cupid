@@ -1,15 +1,8 @@
-/* src/index.css */
-:root {
-  color-scheme: dark;
-}
-
 html,
 body {
   height: 100%;
 }
-
 body {
   margin: 0;
-  min-height: 100%;
-  display: block; /* IMPORTANT: don't use flex centering */
+  display: block;
 }

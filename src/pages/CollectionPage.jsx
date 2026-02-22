@@ -58,9 +58,10 @@ export default function CollectionPage() {
         ))}
       </div>
       <p>{state.ownedIds.size} selected</p>
-      <div className="action-bar">
+
+      <div className="bottom-bar">
         <button
-          className="btn"
+          className="btn btn--ghost"
           type="button"
           onClick={() => {
             dispatch({ type: "CLEAR_OWNED" });
@@ -72,7 +73,7 @@ export default function CollectionPage() {
         </button>
 
         <button
-          className="btn"
+          className="btn btn--primary"
           type="button"
           disabled={state.ownedIds.size < 2}
           onClick={() => dispatch({ type: "START_SWIPE" })}
