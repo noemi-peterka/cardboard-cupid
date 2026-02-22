@@ -220,16 +220,6 @@
     "genres": ["strategy"]
   },
   {
-    "id": 84876,
-    "name": "The Castles of Burgundy",
-    "year": 2011,
-    "rank": 15,
-    "usersRated": 68682,
-    "bayes": 8.02796,
-    "avg": 8.15766,
-    "genres": ["strategy"]
-  },
-  {
     "id": 199792,
     "name": "Everdell",
     "year": 2018,
@@ -319,26 +309,7 @@
     "avg": 7.48103,
     "genres": ["family"]
   },
-  {
-    "id": 316554,
-    "name": "Dune: Imperium",
-    "year": 2020,
-    "rank": 5,
-    "usersRated": 57128,
-    "bayes": 8.22399,
-    "avg": 8.41398,
-    "genres": ["strategy"]
-  },
-  {
-    "id": 161936,
-    "name": "Pandemic Legacy: Season 1",
-    "year": 2015,
-    "rank": 3,
-    "usersRated": 57033,
-    "bayes": 8.34873,
-    "avg": 8.5048,
-    "genres": ["strategy", "thematic"]
-  },
+
   {
     "id": 478,
     "name": "Citadels",
@@ -690,16 +661,6 @@
     "genres": ["party"]
   },
   {
-    "id": 291457,
-    "name": "Gloomhaven: Jaws of the Lion",
-    "year": 2020,
-    "rank": 12,
-    "usersRated": 40412,
-    "bayes": 8.10151,
-    "avg": 8.3662,
-    "genres": ["strategy", "thematic"]
-  },
-  {
     "id": 15987,
     "name": "Arkham Horror",
     "year": 2005,
@@ -908,16 +869,6 @@
     "bayes": 6.9524,
     "avg": 7.09649,
     "genres": ["family"]
-  },
-  {
-    "id": 96848,
-    "name": "Mage Knight Board Game",
-    "year": 2011,
-    "rank": 40,
-    "usersRated": 34966,
-    "bayes": 7.83695,
-    "avg": 8.0797,
-    "genres": ["strategy", "thematic"]
   },
   {
     "id": 39463,
@@ -1290,16 +1241,6 @@
     "genres": ["party"]
   },
   {
-    "id": 233078,
-    "name": "Twilight Imperium: Fourth Edition",
-    "year": 2017,
-    "rank": 6,
-    "usersRated": 27881,
-    "bayes": 8.21922,
-    "avg": 8.56535,
-    "genres": ["strategy", "thematic"]
-  },
-  {
     "id": 155426,
     "name": "Castles of Mad King Ludwig",
     "year": 2014,
@@ -1590,16 +1531,6 @@
     "genres": ["family", "strategy"]
   },
   {
-    "id": 198773,
-    "name": "Codenames: Pictures",
-    "year": 2016,
-    "rank": 487,
-    "usersRated": 24902,
-    "bayes": 7.00007,
-    "avg": 7.17788,
-    "genres": ["party"]
-  },
-  {
     "id": 107529,
     "name": "Kingdom Builder",
     "year": 2011,
@@ -1618,16 +1549,6 @@
     "bayes": 7.81081,
     "avg": 8.05782,
     "genres": ["family"]
-  },
-  {
-    "id": 115746,
-    "name": "War of the Ring: Second Edition",
-    "year": 2011,
-    "rank": 8,
-    "usersRated": 24713,
-    "bayes": 8.1976,
-    "avg": 8.55297,
-    "genres": ["thematic", "wargame"]
   },
   {
     "id": 239188,
@@ -2370,16 +2291,6 @@
     "genres": ["thematic"]
   },
   {
-    "id": 12493,
-    "name": "Twilight Imperium: Third Edition",
-    "year": 2005,
-    "rank": 150,
-    "usersRated": 19540,
-    "bayes": 7.46258,
-    "avg": 7.78077,
-    "genres": ["strategy", "thematic"]
-  },
-  {
     "id": 318977,
     "name": "MicroMacro: Crime City",
     "year": 2020,
@@ -2398,16 +2309,6 @@
     "bayes": 6.07835,
     "avg": 6.22972,
     "genres": ["party"]
-  },
-  {
-    "id": 287954,
-    "name": "Azul: Summer Pavilion",
-    "year": 2019,
-    "rank": 237,
-    "usersRated": 19077,
-    "bayes": 7.3002,
-    "avg": 7.5707,
-    "genres": ["abstract", "family"]
   },
   {
     "id": 420087,
@@ -2560,16 +2461,6 @@
     "genres": ["strategy"]
   },
   {
-    "id": 221107,
-    "name": "Pandemic Legacy: Season 2",
-    "year": 2017,
-    "rank": 71,
-    "usersRated": 18184,
-    "bayes": 7.69082,
-    "avg": 8.01237,
-    "genres": ["strategy", "thematic"]
-  },
-  {
     "id": 223040,
     "name": "Fantasy Realms",
     "year": 2017,
@@ -2657,16 +2548,6 @@
     "usersRated": 17449,
     "bayes": 7.99641,
     "avg": 8.41638,
-    "genres": ["strategy"]
-  },
-  {
-    "id": 341169,
-    "name": "Great Western Trail: Second Edition",
-    "year": 2021,
-    "rank": 31,
-    "usersRated": 17429,
-    "bayes": 7.90343,
-    "avg": 8.2679,
     "genres": ["strategy"]
   },
   {
@@ -2847,16 +2728,6 @@
     "usersRated": 16831,
     "bayes": 7.27617,
     "avg": 7.57274,
-    "genres": ["strategy"]
-  },
-  {
-    "id": 397598,
-    "name": "Dune: Imperium – Uprising",
-    "year": 2023,
-    "rank": 7,
-    "usersRated": 16828,
-    "bayes": 8.21571,
-    "avg": 8.70423,
     "genres": ["strategy"]
   },
   {
@@ -3338,16 +3209,6 @@
     "bayes": 6.37258,
     "avg": 6.52724,
     "genres": ["family", "party"]
-  },
-  {
-    "id": 256226,
-    "name": "Azul: Stained Glass of Sintra",
-    "year": 2018,
-    "rank": 498,
-    "usersRated": 14911,
-    "bayes": 6.99526,
-    "avg": 7.2852,
-    "genres": ["abstract", "family"]
   },
   {
     "id": 154597,
@@ -4550,16 +4411,6 @@
     "genres": ["thematic"]
   },
   {
-    "id": 150658,
-    "name": "Pandemic: The Cure",
-    "year": 2014,
-    "rank": 607,
-    "usersRated": 11085,
-    "bayes": 6.90831,
-    "avg": 7.23002,
-    "genres": ["family", "strategy"]
-  },
-  {
     "id": 180593,
     "name": "The Bloody Inn",
     "year": 2015,
@@ -4618,16 +4469,6 @@
     "bayes": 7.33722,
     "avg": 7.78252,
     "genres": ["thematic", "wargame"]
-  },
-  {
-    "id": 363622,
-    "name": "The Castles of Burgundy: Special Edition",
-    "year": 2023,
-    "rank": 0,
-    "usersRated": 10947,
-    "bayes": 8.45928,
-    "avg": 9.14441,
-    "genres": []
   },
   {
     "id": 97842,
@@ -5420,16 +5261,6 @@
     "genres": ["thematic"]
   },
   {
-    "id": 314040,
-    "name": "Pandemic Legacy: Season 0",
-    "year": 2020,
-    "rank": 60,
-    "usersRated": 9402,
-    "bayes": 7.73979,
-    "avg": 8.34106,
-    "genres": ["strategy", "thematic"]
-  },
-  {
     "id": 265188,
     "name": "Glen More II: Chronicles",
     "year": 2019,
@@ -6168,16 +5999,6 @@
     "bayes": 6.9339,
     "avg": 7.35568,
     "genres": ["strategy"]
-  },
-  {
-    "id": 248562,
-    "name": "Mage Knight: Ultimate Edition",
-    "year": 2018,
-    "rank": 0,
-    "usersRated": 8289,
-    "bayes": 7.97279,
-    "avg": 8.8445,
-    "genres": []
   },
   {
     "id": 22345,
@@ -7108,16 +6929,6 @@
     "bayes": 6.42418,
     "avg": 6.78216,
     "genres": ["party"]
-  },
-  {
-    "id": 191977,
-    "name": "The Castles of Burgundy: The Card Game",
-    "year": 2016,
-    "rank": 1148,
-    "usersRated": 7130,
-    "bayes": 6.57374,
-    "avg": 6.94067,
-    "genres": ["strategy"]
   },
   {
     "id": 770,
@@ -8338,16 +8149,6 @@
     "bayes": 6.68167,
     "avg": 7.23697,
     "genres": ["customizable-card-game", "strategy"]
-  },
-  {
-    "id": 346965,
-    "name": "Azul: Queen's Garden",
-    "year": 2021,
-    "rank": 664,
-    "usersRated": 6129,
-    "bayes": 6.86098,
-    "avg": 7.44332,
-    "genres": ["abstract", "family"]
   },
   {
     "id": 12995,
@@ -10750,16 +10551,6 @@
     "genres": ["family"]
   },
   {
-    "id": 362944,
-    "name": "War of the Ring: The Card Game",
-    "year": 2022,
-    "rank": 683,
-    "usersRated": 4719,
-    "bayes": 6.85211,
-    "avg": 7.60995,
-    "genres": ["strategy", "thematic"]
-  },
-  {
     "id": 407297,
     "name": "River Valley Glassworks",
     "year": 2024,
@@ -11678,16 +11469,6 @@
     "bayes": 6.05641,
     "avg": 6.39567,
     "genres": ["abstract", "family"]
-  },
-  {
-    "id": 232988,
-    "name": "The Castles of Burgundy: The Dice Game",
-    "year": 2017,
-    "rank": 1632,
-    "usersRated": 4359,
-    "bayes": 6.37675,
-    "avg": 6.85796,
-    "genres": ["family"]
   },
   {
     "id": 98351,
@@ -13100,16 +12881,6 @@
     "genres": ["family"]
   },
   {
-    "id": 205158,
-    "name": "Codenames: Deep Undercover",
-    "year": 2016,
-    "rank": 2474,
-    "usersRated": 3919,
-    "bayes": 6.13394,
-    "avg": 6.55222,
-    "genres": ["party"]
-  },
-  {
     "id": 241831,
     "name": "Reykholt",
     "year": 2018,
@@ -13500,16 +13271,6 @@
     "genres": ["thematic"]
   },
   {
-    "id": 367150,
-    "name": "Dune: War for Arrakis",
-    "year": 2024,
-    "rank": 283,
-    "usersRated": 3787,
-    "bayes": 7.21949,
-    "avg": 8.48299,
-    "genres": ["thematic", "wargame"]
-  },
-  {
     "id": 226518,
     "name": "EXIT: The Game – The Sunken Treasure",
     "year": 2017,
@@ -13518,16 +13279,6 @@
     "bayes": 6.43418,
     "avg": 7.0311,
     "genres": ["family", "thematic"]
-  },
-  {
-    "id": 393672,
-    "name": "Gloomhaven: Buttons & Bugs",
-    "year": 2024,
-    "rank": 913,
-    "usersRated": 3784,
-    "bayes": 6.69491,
-    "avg": 7.52425,
-    "genres": ["strategy"]
   },
   {
     "id": 116954,
@@ -14370,16 +14121,6 @@
     "genres": ["strategy"]
   },
   {
-    "id": 157789,
-    "name": "Pandemic: Contagion",
-    "year": 2014,
-    "rank": 3005,
-    "usersRated": 3533,
-    "bayes": 6.02439,
-    "avg": 6.40074,
-    "genres": ["family"]
-  },
-  {
     "id": 298231,
     "name": "Skyrise",
     "year": 2024,
@@ -14678,16 +14419,6 @@
     "bayes": 6.59536,
     "avg": 7.36134,
     "genres": ["family", "strategy"]
-  },
-  {
-    "id": 220775,
-    "name": "Codenames: Disney – Family Edition",
-    "year": 2017,
-    "rank": 2523,
-    "usersRated": 3461,
-    "bayes": 6.12454,
-    "avg": 6.58575,
-    "genres": ["family", "party"]
   },
   {
     "id": 255674,
@@ -15360,16 +15091,6 @@
     "genres": ["party"]
   },
   {
-    "id": 214032,
-    "name": "Founders of Gloomhaven",
-    "year": 2018,
-    "rank": 2679,
-    "usersRated": 3321,
-    "bayes": 6.08949,
-    "avg": 6.56379,
-    "genres": ["strategy"]
-  },
-  {
     "id": 117663,
     "name": "Piraten Kapern",
     "year": 2012,
@@ -15768,16 +15489,6 @@
     "bayes": 6.56496,
     "avg": 7.38386,
     "genres": ["thematic", "wargame"]
-  },
-  {
-    "id": 363247,
-    "name": "Azul: Master Chocolatier",
-    "year": 2022,
-    "rank": 729,
-    "usersRated": 3225,
-    "bayes": 6.81406,
-    "avg": 7.86019,
-    "genres": ["abstract", "family"]
   },
   {
     "id": 37120,
@@ -16229,16 +15940,7 @@
     "avg": 7.14814,
     "genres": ["thematic"]
   },
-  {
-    "id": 280789,
-    "name": "Pandemic: Rapid Response",
-    "year": 2019,
-    "rank": 2769,
-    "usersRated": 3102,
-    "bayes": 6.07141,
-    "avg": 6.54786,
-    "genres": ["family"]
-  },
+
   {
     "id": 142079,
     "name": "Space Cadets: Dice Duel",
@@ -16317,16 +16019,6 @@
     "usersRated": 3094,
     "bayes": 6.22133,
     "avg": 6.78699,
-    "genres": ["strategy"]
-  },
-  {
-    "id": 234671,
-    "name": "Pandemic: Rising Tide",
-    "year": 2017,
-    "rank": 1020,
-    "usersRated": 3093,
-    "bayes": 6.64135,
-    "avg": 7.53092,
     "genres": ["strategy"]
   },
   {
@@ -18630,16 +18322,6 @@
     "genres": ["family"]
   },
   {
-    "id": 431038,
-    "name": "Azul Duel",
-    "year": 2025,
-    "rank": 1965,
-    "usersRated": 2672,
-    "bayes": 6.26411,
-    "avg": 6.99764,
-    "genres": ["abstract"]
-  },
-  {
     "id": 257283,
     "name": "Tiny Epic Mechs",
     "year": 2019,
@@ -19257,16 +18939,6 @@
     "usersRated": 2567,
     "bayes": 5.99086,
     "avg": 6.48318,
-    "genres": ["family"]
-  },
-  {
-    "id": 301919,
-    "name": "Pandemic: Hot Zone – North America",
-    "year": 2020,
-    "rank": 2083,
-    "usersRated": 2564,
-    "bayes": 6.23222,
-    "avg": 6.96202,
     "genres": ["family"]
   },
   {
@@ -30620,16 +30292,6 @@
     "genres": ["strategy"]
   },
   {
-    "id": 57660,
-    "name": "Time's Up! Edición Azul",
-    "year": 2006,
-    "rank": 2093,
-    "usersRated": 1436,
-    "bayes": 6.23063,
-    "avg": 7.40023,
-    "genres": ["party"]
-  },
-  {
     "id": 6281,
     "name": "Eketorp",
     "year": 2003,
@@ -30790,16 +30452,6 @@
     "genres": ["thematic"]
   },
   {
-    "id": 249821,
-    "name": "Codenames: Harry Potter",
-    "year": 2018,
-    "rank": 4238,
-    "usersRated": 1430,
-    "bayes": 5.85018,
-    "avg": 6.46833,
-    "genres": ["family", "party"]
-  },
-  {
     "id": 423401,
     "name": "Minos: Dawn of the Bronze Age",
     "year": 2024,
@@ -30808,16 +30460,6 @@
     "bayes": 6.2735,
     "avg": 7.54944,
     "genres": ["strategy"]
-  },
-  {
-    "id": 233208,
-    "name": "D-Day Dice (Second Edition)",
-    "year": 2019,
-    "rank": 2249,
-    "usersRated": 1429,
-    "bayes": 6.19137,
-    "avg": 7.42846,
-    "genres": ["wargame"]
   },
   {
     "id": 238393,
@@ -30848,16 +30490,6 @@
     "bayes": 5.87999,
     "avg": 6.54013,
     "genres": ["strategy"]
-  },
-  {
-    "id": 221769,
-    "name": "Bios: Megafauna (Second Edition)",
-    "year": 2017,
-    "rank": 2050,
-    "usersRated": 1428,
-    "bayes": 6.24283,
-    "avg": 7.56625,
-    "genres": ["strategy", "thematic"]
   },
   {
     "id": 278751,
@@ -31040,16 +30672,6 @@
     "genres": ["strategy"]
   },
   {
-    "id": 259298,
-    "name": "The Ancient World (Second Edition)",
-    "year": 2019,
-    "rank": 2022,
-    "usersRated": 1416,
-    "bayes": 6.24822,
-    "avg": 7.49369,
-    "genres": ["strategy"]
-  },
-  {
     "id": 203828,
     "name": "13 Minutes: The Cuban Missile Crisis, 1962",
     "year": 2017,
@@ -31098,16 +30720,6 @@
     "bayes": 5.7796,
     "avg": 6.30614,
     "genres": ["thematic"]
-  },
-  {
-    "id": 109125,
-    "name": "Wallenstein (Second Edition)",
-    "year": 2012,
-    "rank": 1919,
-    "usersRated": 1413,
-    "bayes": 6.27791,
-    "avg": 7.56402,
-    "genres": ["strategy"]
   },
   {
     "id": 254127,
@@ -31198,26 +30810,6 @@
     "bayes": 5.73791,
     "avg": 6.16861,
     "genres": ["family", "strategy"]
-  },
-  {
-    "id": 7098,
-    "name": "Monopoly: Deluxe Edition",
-    "year": 1995,
-    "rank": 30000,
-    "usersRated": 1410,
-    "bayes": 5.36072,
-    "avg": 5.26111,
-    "genres": ["family"]
-  },
-  {
-    "id": 274466,
-    "name": "Valley of the Kings: Premium Edition",
-    "year": 2019,
-    "rank": 0,
-    "usersRated": 1410,
-    "bayes": 6.20114,
-    "avg": 7.39061,
-    "genres": []
   },
   {
     "id": 96260,
@@ -31368,16 +30960,6 @@
     "bayes": 5.6952,
     "avg": 6.14194,
     "genres": ["strategy"]
-  },
-  {
-    "id": 418556,
-    "name": "Rebel Princess: Deluxe Edition",
-    "year": 2024,
-    "rank": 0,
-    "usersRated": 1398,
-    "bayes": 6.37023,
-    "avg": 7.86461,
-    "genres": []
   },
   {
     "id": 144325,
@@ -31658,16 +31240,6 @@
     "bayes": 5.68586,
     "avg": 5.99253,
     "genres": ["family"]
-  },
-  {
-    "id": 242722,
-    "name": "Here I Stand: 500th Anniversary Edition",
-    "year": 2017,
-    "rank": 1205,
-    "usersRated": 1382,
-    "bayes": 6.5444,
-    "avg": 8.44745,
-    "genres": ["wargame"]
   },
   {
     "id": 40531,
@@ -31990,16 +31562,6 @@
     "genres": ["strategy"]
   },
   {
-    "id": 437306,
-    "name": "Parks (Second Edition)",
-    "year": 2025,
-    "rank": 1739,
-    "usersRated": 1366,
-    "bayes": 6.33639,
-    "avg": 7.92834,
-    "genres": ["family"]
-  },
-  {
     "id": 378476,
     "name": "Mycelia",
     "year": 2024,
@@ -32268,16 +31830,6 @@
     "bayes": 6.22846,
     "avg": 7.47826,
     "genres": ["thematic"]
-  },
-  {
-    "id": 195503,
-    "name": "City of Iron: Second Edition",
-    "year": 2016,
-    "rank": 2547,
-    "usersRated": 1346,
-    "bayes": 6.11841,
-    "avg": 7.21596,
-    "genres": ["strategy"]
   },
   {
     "id": 359502,
@@ -32708,16 +32260,6 @@
     "bayes": 5.96389,
     "avg": 6.8151,
     "genres": ["family"]
-  },
-  {
-    "id": 235555,
-    "name": "Bios: Origins (Second Edition)",
-    "year": 2019,
-    "rank": 1895,
-    "usersRated": 1319,
-    "bayes": 6.28292,
-    "avg": 7.73432,
-    "genres": ["strategy"]
   },
   {
     "id": 22877,
@@ -33790,16 +33332,6 @@
     "genres": ["strategy"]
   },
   {
-    "id": 220774,
-    "name": "Codenames: Marvel",
-    "year": 2017,
-    "rank": 6162,
-    "usersRated": 1267,
-    "bayes": 5.70314,
-    "avg": 6.14447,
-    "genres": ["party"]
-  },
-  {
     "id": 158742,
     "name": "Yardmaster Express",
     "year": 2014,
@@ -33988,16 +33520,6 @@
     "bayes": 5.82438,
     "avg": 6.43114,
     "genres": ["family"]
-  },
-  {
-    "id": 341165,
-    "name": "Dune: A Game of Conquest and Diplomacy",
-    "year": 2021,
-    "rank": 4055,
-    "usersRated": 1258,
-    "bayes": 5.87172,
-    "avg": 6.66873,
-    "genres": ["strategy", "wargame"]
   },
   {
     "id": 29355,
@@ -37330,16 +36852,6 @@
     "genres": ["party"]
   },
   {
-    "id": 60153,
-    "name": "War of the Ring Collector's Edition",
-    "year": 2010,
-    "rank": 0,
-    "usersRated": 1108,
-    "bayes": 6.50073,
-    "avg": 8.71461,
-    "genres": []
-  },
-  {
     "id": 145633,
     "name": "Ascension: Apprentice Edition",
     "year": 2013,
@@ -38200,16 +37712,6 @@
     "genres": ["abstract"]
   },
   {
-    "id": 300192,
-    "name": "Twilight Struggle: Red Sea – Conflict in the Horn of Africa",
-    "year": 2022,
-    "rank": 2507,
-    "usersRated": 1077,
-    "bayes": 6.12841,
-    "avg": 7.53738,
-    "genres": ["wargame"]
-  },
-  {
     "id": 386166,
     "name": "Santorini: Pantheon Edition",
     "year": 2025,
@@ -38628,16 +38130,6 @@
     "bayes": 5.75811,
     "avg": 6.36286,
     "genres": ["family"]
-  },
-  {
-    "id": 329670,
-    "name": "Pandemic: Hot Zone – Europe",
-    "year": 2021,
-    "rank": 3366,
-    "usersRated": 1059,
-    "bayes": 5.96478,
-    "avg": 7.04225,
-    "genres": ["family", "strategy"]
   },
   {
     "id": 202982,
@@ -48220,16 +47712,6 @@
     "genres": ["thematic"]
   },
   {
-    "id": 450782,
-    "name": "Codenames: Back to Hogwarts",
-    "year": 2025,
-    "rank": 10050,
-    "usersRated": 767,
-    "bayes": 5.58635,
-    "avg": 5.72038,
-    "genres": []
-  },
-  {
     "id": 15180,
     "name": "Go West!",
     "year": 2005,
@@ -50390,16 +49872,6 @@
     "genres": ["family", "strategy"]
   },
   {
-    "id": 329713,
-    "name": "Dune: House Secrets",
-    "year": 2021,
-    "rank": 29983,
-    "usersRated": 719,
-    "bayes": 5.37587,
-    "avg": 5.01663,
-    "genres": []
-  },
-  {
     "id": 299,
     "name": "De Bellis Antiquitatis: Quick Play Wargame Rules with Army Lists for Ancient and Medieval Battles",
     "year": 1990,
@@ -50838,16 +50310,6 @@
     "bayes": 5.81335,
     "avg": 6.93752,
     "genres": []
-  },
-  {
-    "id": 2876,
-    "name": "Mage Knight Dungeons",
-    "year": 2002,
-    "rank": 5329,
-    "usersRated": 708,
-    "bayes": 5.75374,
-    "avg": 6.71803,
-    "genres": ["customizable-card-game"]
   },
   {
     "id": 3990,
@@ -58070,16 +57532,6 @@
     "genres": ["party"]
   },
   {
-    "id": 26055,
-    "name": "Twilight Imperium: Second Edition",
-    "year": 2000,
-    "rank": 5428,
-    "usersRated": 581,
-    "bayes": 5.7467,
-    "avg": 6.84133,
-    "genres": ["thematic"]
-  },
-  {
     "id": 13347,
     "name": "Plunder",
     "year": 2004,
@@ -60997,16 +60449,6 @@
     "usersRated": 538,
     "bayes": 5.41885,
     "avg": 5.17565,
-    "genres": []
-  },
-  {
-    "id": 390478,
-    "name": "Gloomhaven (Second Edition)",
-    "year": 2025,
-    "rank": 4151,
-    "usersRated": 537,
-    "bayes": 5.85968,
-    "avg": 8.25905,
     "genres": []
   },
   {

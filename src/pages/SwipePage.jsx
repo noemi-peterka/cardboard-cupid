@@ -2,13 +2,12 @@ import { useRef, useState } from "react";
 import { useGame } from "../state/GameProvider";
 
 export default function SwipePage() {
-  const img = gameImagesById[game.id];
   const { state, dispatch } = useGame();
 
-  // drag/swipe support
   const startXRef = useRef(null);
   const [dx, setDx] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
+
   const SWIPE_THRESHOLD = 90;
 
   function resetDrag() {
@@ -30,37 +29,65 @@ export default function SwipePage() {
   function handlePointerUp(onRight, onLeft) {
     if (!isDragging) return;
 
-    if (dx > SWIPE_THRESHOLD) onRight();
-    else if (dx < -SWIPE_THRESHOLD) onLeft();
+    if (dx > SWIPE_THRESHOLD) {
+      onRight();
+    } else if (dx < -SWIPE_THRESHOLD) {
+      onLeft();
+    }
 
     resetDrag();
   }
 
-  // RESULT
+  // ===============================
+  // RESULT MODE
+  // ===============================
   if (state.mode === "result") {
+    const winner = state.winner;
+
     return (
       <div className="swipe-page">
-        <h2>Tonight’s pick:</h2>
-        <h1>{state.winner?.name ?? "No winner"}</h1>
+        <h2>Tonight’s pick</h2>
 
-        <button type="button" onClick={() => dispatch({ type: "RESET_SWIPE" })}>
+        {winner ? (
+          <div className="swipe-card result-card">
+            <img
+              className="swipe-card__img"
+              src={`/images/games/${winner.id}.jpg`}
+              alt=""
+              onError={(e) => (e.target.style.display = "none")}
+            />
+            <div className="swipe-card__overlay" />
+
+            <h1>{winner.name}</h1>
+            {winner.year && <p className="swipe-meta">{winner.year}</p>}
+          </div>
+        ) : (
+          <p>No winner.</p>
+        )}
+
+        <button
+          className="btn"
+          onClick={() => dispatch({ type: "RESET_SWIPE" })}
+        >
           Back to collection
         </button>
       </div>
     );
   }
 
-  // FEED (one card, X/heart adds to liked)
+  // ===============================
+  // FEED MODE
+  // ===============================
   if (state.mode === "feed") {
     const { feedDeck, feedIndex, likedIds } = state.swipe;
-    const current = feedDeck[feedIndex] ?? null;
+    const current = feedDeck[feedIndex];
 
     if (!current) {
       return (
         <div className="swipe-page">
           <p>No games to swipe.</p>
           <button
-            type="button"
+            className="btn"
             onClick={() => dispatch({ type: "RESET_SWIPE" })}
           >
             Back
@@ -72,15 +99,14 @@ export default function SwipePage() {
     return (
       <div className="swipe-page">
         <p className="swipe-progress">
-          {Math.min(feedIndex + 1, feedDeck.length)} / {feedDeck.length} —{" "}
-          {likedIds.size} liked
+          {feedIndex + 1} / {feedDeck.length} — {likedIds.size} liked
         </p>
 
         <div
           className="swipe-card"
           style={{
             transform: `translateX(${dx}px) rotate(${dx * 0.05}deg)`,
-            transition: isDragging ? "none" : "transform 120ms ease-out",
+            transition: isDragging ? "none" : "transform 150ms ease",
           }}
           onPointerDown={handlePointerDown}
           onPointerMove={handlePointerMove}
@@ -92,25 +118,29 @@ export default function SwipePage() {
           }
           onPointerCancel={resetDrag}
         >
+          <img
+            className="swipe-card__img"
+            src={`/images/games/${current.id}.jpg`}
+            alt=""
+            onError={(e) => (e.target.style.display = "none")}
+          />
+          <div className="swipe-card__overlay" />
+
           <h1>{current.name}</h1>
           {current.year && <p className="swipe-meta">{current.year}</p>}
         </div>
 
         <div className="swipe-actions">
           <button
-            type="button"
             className="swipe-btn swipe-btn-x"
             onClick={() => dispatch({ type: "FEED_REJECT" })}
-            aria-label="Reject"
           >
             ✕
           </button>
 
           <button
-            type="button"
             className="swipe-btn swipe-btn-heart"
             onClick={() => dispatch({ type: "FEED_LIKE" })}
-            aria-label="Like"
           >
             ♥
           </button>
@@ -119,17 +149,20 @@ export default function SwipePage() {
     );
   }
 
-  // TOURNAMENT (one card challenger, but winner is visible)
+  // ===============================
+  // TOURNAMENT MODE
+  // ===============================
   if (state.mode === "tournament") {
     const { tournamentDeck, tournamentIndex, currentWinner } = state.swipe;
-    const challenger = tournamentDeck[tournamentIndex] ?? null;
+
+    const challenger = tournamentDeck[tournamentIndex];
 
     if (!currentWinner || !challenger) {
       return (
         <div className="swipe-page">
-          <p>Something went wrong starting the tournament.</p>
+          <p>Something went wrong.</p>
           <button
-            type="button"
+            className="btn"
             onClick={() => dispatch({ type: "RESET_SWIPE" })}
           >
             Back
@@ -152,41 +185,41 @@ export default function SwipePage() {
           className="swipe-card"
           style={{
             transform: `translateX(${dx}px) rotate(${dx * 0.05}deg)`,
-            transition: isDragging ? "none" : "transform 120ms ease-out",
+            transition: isDragging ? "none" : "transform 150ms ease",
           }}
           onPointerDown={handlePointerDown}
           onPointerMove={handlePointerMove}
           onPointerUp={() =>
             handlePointerUp(
-              // right: replace winner with challenger
               () => dispatch({ type: "TOURNAMENT_REPLACE_WINNER" }),
-              // left: keep winner
               () => dispatch({ type: "TOURNAMENT_KEEP_WINNER" }),
             )
           }
           onPointerCancel={resetDrag}
         >
+          <img
+            className="swipe-card__img"
+            src={`/images/games/${challenger.id}.jpg`}
+            alt=""
+            onError={(e) => (e.target.style.display = "none")}
+          />
+          <div className="swipe-card__overlay" />
+
           <h1>{challenger.name}</h1>
           {challenger.year && <p className="swipe-meta">{challenger.year}</p>}
         </div>
 
         <div className="swipe-actions">
           <button
-            type="button"
             className="swipe-btn swipe-btn-x"
             onClick={() => dispatch({ type: "TOURNAMENT_KEEP_WINNER" })}
-            aria-label="Keep current winner"
-            title="Keep current winner"
           >
             ✕
           </button>
 
           <button
-            type="button"
             className="swipe-btn swipe-btn-heart"
             onClick={() => dispatch({ type: "TOURNAMENT_REPLACE_WINNER" })}
-            aria-label="Replace winner"
-            title="Replace winner"
           >
             ♥
           </button>
@@ -195,6 +228,5 @@ export default function SwipePage() {
     );
   }
 
-  // fallback
   return null;
 }

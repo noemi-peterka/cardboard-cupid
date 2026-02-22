@@ -58,24 +58,28 @@ export default function CollectionPage() {
         ))}
       </div>
       <p>{state.ownedIds.size} selected</p>
-      <button
-        type="button"
-        onClick={() => {
-          dispatch({ type: "CLEAR_OWNED" });
-          setQuery("");
-        }}
-        disabled={state.ownedIds.size === 0 && query === ""}
-      >
-        Clear all
-      </button>
+      <div className="action-bar">
+        <button
+          className="btn"
+          type="button"
+          onClick={() => {
+            dispatch({ type: "CLEAR_OWNED" });
+            setQuery("");
+          }}
+          disabled={state.ownedIds.size === 0 && query === ""}
+        >
+          Clear all
+        </button>
 
-      <button
-        type="button"
-        disabled={state.ownedIds.size < 2}
-        onClick={() => dispatch({ type: "START_SWIPE" })}
-      >
-        Start
-      </button>
+        <button
+          className="btn"
+          type="button"
+          disabled={state.ownedIds.size < 2}
+          onClick={() => dispatch({ type: "START_SWIPE" })}
+        >
+          Start
+        </button>
+      </div>
     </div>
   );
 }
