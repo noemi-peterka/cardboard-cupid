@@ -68,11 +68,11 @@ body {
     var(--bg);
 }
 
-/* ---------- Layout ---------- */
 #root {
-  max-width: var(--maxw);
-  margin: 0 auto;
-  padding: 22px 18px 40px;
+  width: 100%;
+  max-width: none; /* IMPORTANT */
+  margin: 0;
+  padding: 0; /* IMPORTANT */
 }
 
 /* ---------- Common ---------- */
@@ -176,8 +176,9 @@ button {
 }
 
 .app-header__right {
+  padding-right: 200px;
   display: flex;
-  align-items: center;
+  align-items: left;
   gap: 10px;
   flex: 0 0 auto;
 }
@@ -248,6 +249,7 @@ button {
 }
 
 .search-input {
+  margin-top: 20px;
   width: 100%;
   padding: 14px 48px 14px 16px;
   border: 1px solid var(--border);
