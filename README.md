@@ -1,16 +1,61 @@
-# React + Vite
+# Cardboard Cupid 🎲💘
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Cardboard Cupid is a React app that helps you pick a board game to play using a Tinder-style flow.
 
-Currently, two official plugins are available:
+You start by selecting games from a curated library (generated from a CSV dataset), then swipe through a deck to build a shortlist. Once you’re done swiping, the app runs a “final round” tournament to crown a single winner — with a small confetti celebration at the end.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- **Game library from local data** (no API required)
+- **Search + select** games you own / want to consider
+- **Top games shown by default** (so the screen isn’t empty)
+- **Swipe deck (feed round)**:
+  - ✕ reject
+  - ♥ like
+  - drag left/right support (pointer events)
+- **Tournament round** to produce **one final winner**
+- **Winner screen** with **confetti**
+- Optional **local cover images** per game (drop files into `/public/images/games`)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- React (Vite)
+- Context + reducer for app state
+- Local JSON dataset generated from CSV
+- `canvas-confetti` for the winner animation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## App Flow
+
+1. **Collection page**
+   - Browse + search the game list
+   - Select games to include in your session
+   - Start is enabled once at least 2 games are selected
+
+2. **Swipe feed**
+   - Swipe/choose games to “like”
+   - Builds a shortlist
+
+3. **Tournament**
+   - Compares liked games to produce one final winner
+
+4. **Result**
+   - Displays the winner + confetti
+
+## Data: CSV → JSON
+
+The original dataset is a CSV file (`boardgames_ranks.csv`). A Node script parses it and creates a smaller, cleaner JSON file used by the React app.
+
+Filtering rules typically include:
+
+- Remove expansions / variants
+- Remove very unpopular games
+- Remove very old games (optional)
+- Deduplicate near-identical names
+
+### Build the JSON
+
+From the project root:
+
+```bash
+node scripts/build-games-json.mjs
+```

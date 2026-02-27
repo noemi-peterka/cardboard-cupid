@@ -1,5 +1,6 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { useGame } from "../state/GameProvider";
+import confetti from "canvas-confetti";
 
 export default function SwipePage() {
   const { state, dispatch } = useGame();
@@ -9,6 +10,32 @@ export default function SwipePage() {
   const [isDragging, setIsDragging] = useState(false);
 
   const SWIPE_THRESHOLD = 90;
+
+  // ✅ Hook must be at top-level (not inside if)
+  useEffect(() => {
+    if (state.mode !== "result") return;
+    const winner = state.winner;
+    if (!winner) return;
+
+    const duration = 900;
+    const end = Date.now() + duration;
+
+    (function frame() {
+      confetti({
+        particleCount: 60,
+        spread: 70,
+        startVelocity: 35,
+        origin: { y: 0.25 },
+      });
+      confetti({
+        particleCount: 40,
+        spread: 90,
+        startVelocity: 30,
+        origin: { y: 0.25 },
+      });
+      if (Date.now() < end) requestAnimationFrame(frame);
+    })();
+  }, [state.mode, state.winner?.id]);
 
   function resetDrag() {
     setDx(0);
@@ -54,7 +81,7 @@ export default function SwipePage() {
               className="swipe-card__img"
               src={`/images/games/${winner.id}.jpg`}
               alt=""
-              onError={(e) => (e.target.style.display = "none")}
+              onError={(e) => (e.currentTarget.style.display = "none")}
             />
             <div className="swipe-card__overlay" />
 
@@ -122,7 +149,7 @@ export default function SwipePage() {
             className="swipe-card__img"
             src={`/images/games/${current.id}.jpg`}
             alt=""
-            onError={(e) => (e.target.style.display = "none")}
+            onError={(e) => (e.currentTarget.style.display = "none")}
           />
           <div className="swipe-card__overlay" />
 
@@ -137,7 +164,6 @@ export default function SwipePage() {
           >
             ✕
           </button>
-
           <button
             className="swipe-btn swipe-btn-heart"
             onClick={() => dispatch({ type: "FEED_LIKE" })}
@@ -154,7 +180,6 @@ export default function SwipePage() {
   // ===============================
   if (state.mode === "tournament") {
     const { tournamentDeck, tournamentIndex, currentWinner } = state.swipe;
-
     const challenger = tournamentDeck[tournamentIndex];
 
     if (!currentWinner || !challenger) {
@@ -201,7 +226,7 @@ export default function SwipePage() {
             className="swipe-card__img"
             src={`/images/games/${challenger.id}.jpg`}
             alt=""
-            onError={(e) => (e.target.style.display = "none")}
+            onError={(e) => (e.currentTarget.style.display = "none")}
           />
           <div className="swipe-card__overlay" />
 
@@ -216,7 +241,6 @@ export default function SwipePage() {
           >
             ✕
           </button>
-
           <button
             className="swipe-btn swipe-btn-heart"
             onClick={() => dispatch({ type: "TOURNAMENT_REPLACE_WINNER" })}

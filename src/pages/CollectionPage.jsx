@@ -46,7 +46,7 @@ export default function CollectionPage() {
         onChange={setQuery}
         onClear={() => setQuery("")}
       />
-
+      <h1>Top Games</h1>
       <div className="grid">
         {visibleGames.map((game) => (
           <GameTile

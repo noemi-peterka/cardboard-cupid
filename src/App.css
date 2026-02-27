@@ -572,12 +572,46 @@ button {
   margin: 18px auto 0;
   padding: 10px;
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(17, 26, 43, 0.82); /* much more opaque */
+  border: 1px solid rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(14px);
   box-shadow: var(--shadow-soft);
+  overflow: hidden; /* clips the blur */
+  isolation: isolate;
+  position: relative;
+  z-index: 1;
 }
 
 .bottom-bar .btn {
   flex: 1;
+}
+
+h1 {
+  text-align: center;
+}
+
+.winner-badge {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  margin-bottom: 10px;
+  animation: winner-pop 320ms ease-out;
+}
+
+@keyframes winner-pop {
+  from {
+    transform: translateY(6px) scale(0.98);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
 }
